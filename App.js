@@ -49,6 +49,12 @@ const Home = () => {
     }
     RNCallKeep.addEventListener('answerCall', onAnswerCallAction);
 
+
+    // Set the status to inactive initially
+    useEffect(() => {
+        setServerInfoIsCalling(toggleServer("setInactive"));
+    }, []);
+
     useEffect(() => {
         const interval = setInterval(() => {
             console.log('Fetching call data from server...');
