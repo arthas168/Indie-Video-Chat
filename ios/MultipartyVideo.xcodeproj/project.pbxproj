@@ -20,6 +20,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8BFC2679AA34E9AABEE0BE50 /* libPods-MultipartyVideo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC84D2B43FA7B16A086C3FC /* libPods-MultipartyVideo-tvOSTests.a */; };
 		A919D917A63B5C50E1FFB81A /* libPods-MultipartyVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 523A766B4C211D882E8D794B /* libPods-MultipartyVideo.a */; };
+		C1A3BACB2541EEC900BF119E /* Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3BACA2541EEC900BF119E /* Void.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		ABC84D2B43FA7B16A086C3FC /* libPods-MultipartyVideo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultipartyVideo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFEE26A9DCC7AA20BABA8B6 /* Pods-MultipartyVideo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipartyVideo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MultipartyVideo-tvOS/Pods-MultipartyVideo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B059A5AAA8682B2E0F148DF8 /* libPods-MultipartyVideo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultipartyVideo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A3BACA2541EEC900BF119E /* Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Void.swift; sourceTree = "<group>"; };
 		C7115D51E75EA89259FE1C7C /* Pods-MultipartyVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipartyVideo.debug.xcconfig"; path = "Target Support Files/Pods-MultipartyVideo/Pods-MultipartyVideo.debug.xcconfig"; sourceTree = "<group>"; };
 		C8F01140D6D3941AE55D428A /* Pods-MultipartyVideo-MultipartyVideoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipartyVideo-MultipartyVideoTests.release.xcconfig"; path = "Target Support Files/Pods-MultipartyVideo-MultipartyVideoTests/Pods-MultipartyVideo-MultipartyVideoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C1A3BACA2541EEC900BF119E /* Void.swift */,
 				13B07FAE1A68108700A75B9A /* MultipartyVideo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MultipartyVideoTests */,
@@ -294,8 +297,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = TZ7SPH95RH;
-						LastSwiftMigration = 1120;
+						DevelopmentTeam = H5SLUL24YX;
+						LastSwiftMigration = 1210;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -636,6 +639,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C1A3BACB2541EEC900BF119E /* Void.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 209AABFC7CCE619E15B613E4 /* Pods-MultipartyVideo-MultipartyVideoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = TZ7SPH95RH;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -700,6 +705,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8F01140D6D3941AE55D428A /* Pods-MultipartyVideo-MultipartyVideoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = TZ7SPH95RH;
@@ -724,7 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TZ7SPH95RH;
+				DEVELOPMENT_TEAM = H5SLUL24YX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MultipartyVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -748,7 +754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TZ7SPH95RH;
+				DEVELOPMENT_TEAM = H5SLUL24YX;
 				INFOPLIST_FILE = MultipartyVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
